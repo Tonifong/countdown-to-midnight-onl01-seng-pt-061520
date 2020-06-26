@@ -7,12 +7,16 @@ def countdown(number)
   number +=1
 end
  return "HAPPY NEW YEAR!"
+
  end
- def countdown_with_sleep(x)
-   x= 1
-   while x < 5
+ 
+ countdown(10)
+ def countdown_with_sleep(number)
+   while number> 0
+   sleep 1
    puts "should take at least 5 seconds to execute"
-   x+=1
+   number-=1
+   return "HAPPY NEW YEAR!"
   end
  end
    
